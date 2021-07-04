@@ -7,10 +7,7 @@
   "main": "index.js",
   "author": "Saitako",
   "scripts": {
-    "start": "parcel serve index.html",
-    "build": "parcel build index.html",
-    "convert": "browserify main.js -o index.js",
-    "test": "node test.js"
+    "dev": "node server.js"
   },
   "license": "MIT",
   "private": true,
