@@ -4,9 +4,10 @@
   "engines": {
     "node": "14.15.4"
   },
-  "main": "index.js",
+  "main": "server.js",
   "author": "Saitako",
   "scripts": {
+    "start": "node server.js",
     "dev": "node server.js"
   },
   "license": "MIT",

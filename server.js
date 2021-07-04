@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const { config } = require("process");
 const app = express();
 const parser = require("./parser.js");
 
@@ -34,6 +35,11 @@ app.get("/", (req, res) => {
   res.render("index", priceResult);
 });
 
-app.listen(process.env.port || 3000, () => {
-  console.log("Server started on port 3000")
+// var server_port = process.env.YOUR_PORT || process.env.PORT || 3000;
+const serverPort = process.env.PORT || 3000;
+// var serverHost = process.env.YOUR_HOST || '0.0.0.0';
+var serverHost = '0.0.0.0';
+
+app.listen(serverPort, serverHost, () => {
+  console.log(`Server started on port ${serverPort}`)
 });
