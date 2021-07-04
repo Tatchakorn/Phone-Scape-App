@@ -51,8 +51,8 @@ module.exports = {
                             return price_arr[1];
                           })
       await nightmare.end();
-      // console.log(`Buy: ${buyResult}`);
-      // console.log(`Sell: ${sellResult}`);
+      console.log(`Buy: ${buyResult}`);
+      console.log(`Sell: ${sellResult}`);
       return [buyResult, sellResult]
     } catch(err) {
       throw err;
