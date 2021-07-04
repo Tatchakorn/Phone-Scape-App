@@ -4,23 +4,16 @@
   "main": "index.js",
   "author": "Saitako",
   "scripts": {
-    "start": "parcel serve index.html",
-    "build": "parcel build index.html",
-    "convert": "browserify main.js -o index.js",
-    "test": "node test.js"
+    "start": "node server.js"
   },
   "license": "MIT",
   "private": true,
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "nightmare": "^3.0.2",
-    "puppeteer": "^10.0.0",
-    "puppeteer-extra-plugin-stealth": "^2.7.8"
+    "nightmare": "^3.0.2"
   },
   "devDependencies": {
-    "browserify": "^17.0.0",
-    "nodemon": "^2.0.7",
-    "parcel-bundler": "^1.12.5"
+    "nodemon": "^2.0.7"
   }
 }

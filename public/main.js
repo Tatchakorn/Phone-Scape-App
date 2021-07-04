@@ -12,16 +12,22 @@ let s2 = parseFloat(sell_2.innerText);
 let b1 = parseFloat(buy_1.innerText);
 let b2 = parseFloat(buy_2.innerText);
 
-if( Math.abs(s1 - s2) >= 0.10 || Math.abs(b1 - b2) >= 0.10) {
+// if( Math.abs(s1 - s2) >= 0.10 || Math.abs(b1 - b2) >= 0.10) {
+//   alertPhone();
+// }
+
+if(Math.abs(s1 - b1) >= 0.15) {
   alertPhone();
 }
 
-// Reload every 5 - 10 miniutes
-const randNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
-const minute = (num) => num * 60000;
-(function loopRandInterval() {
-  let duration = randNum(minute(5), minute(10));
-  setTimeout(() => {
-    location.reload();
-  }, duration);
-})();
+// // Reload every 5 - 10 miniutes
+// const randNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+// const minute = (num) => num * 60000;
+// (function loopRandInterval() {
+//   let duration = randNum(minute(5), minute(10));
+//   setTimeout(() => {
+//     location.reload();
+//   }, duration);
+// })();
+
+setTimeout(window.location.reload.bind(window.location), 10000);

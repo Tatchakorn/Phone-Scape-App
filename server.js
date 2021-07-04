@@ -26,6 +26,7 @@ const minute = (num) => num * 60000;
   let duration = randNum(minute(5), minute(10));
   setTimeout(() => {
     updateBinace();
+    loopRandInterval();
   }, duration);
 })();
 
@@ -35,5 +36,6 @@ app.get("/", (req, res) => {
 });
 
 app.listen(process.env.port || 3000, () => {
-  console.log("Server started on port 3000")
+  console.log("Server started on port 3000");
+  console.log("http://localhost:3000/");
 });
