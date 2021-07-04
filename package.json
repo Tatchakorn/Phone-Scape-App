@@ -1,6 +1,9 @@
 {
   "name": "phone-scrape",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.15.4"
+  },
   "main": "index.js",
   "author": "Saitako",
   "scripts": {
